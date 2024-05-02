@@ -1,0 +1,87 @@
+/* Checkbox.module.css */
+.container {
+	display: block;
+	position: relative;
+	padding-left: 35px;
+	margin-bottom: 12px;
+	cursor: pointer;
+	font-size: 16px;
+	user-select: none;
+}
+
+.checkbox {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+
+.checkmark {
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	height: 20px;
+	width: 20px;
+	background-color: white;
+	border: 1px solid #d4d4d4;
+	border-radius: 4px;
+}
+
+.checkbox:hover ~ .checkmark {
+	background-color: #fafafa;
+}
+.checkbox:active ~ .checkmark {
+	background-color: #f1f1f1;
+}
+.checkbox:focus ~ .checkmark {
+	background-color: white;
+	border: 2px solid #1111117a;
+}
+.checkbox:disabled ~ .checkmark {
+	background-color: white;
+	border: 1px solid #d4d4d4;
+	cursor: not-allowed;
+}
+
+.checkbox:checked ~ .checkmark {
+	background-color: #6e41e2;
+}
+.checkbox:checked:hover ~ .checkmark {
+	background-color: #5835b0;
+}
+.checkbox:checked:active ~ .checkmark {
+	background-color: #472c8a;
+}
+.checkbox:checked:focus ~ .checkmark {
+	background-color: #6e41e2;
+	border: 2px solid #472c8a;
+}
+.checkbox:checked:disabled ~ .checkmark {
+	background-color: #ae95ef;
+	border: 1px solid #6e41e2;
+	cursor: not-allowed;
+}
+.checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+.checkbox:checked ~ .checkmark:after {
+	display: block;
+}
+
+.checkmark:after {
+	left: 7px;
+	top: 3px;
+	width: 5px;
+	height: 10px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	transform: rotate(45deg);
+}
+
+.error .checkmark {
+	background-color: #ff6961;
+}

@@ -1,0 +1,71 @@
+/* FileUploader.module.css */
+.fileUploader {
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	width: 675px;
+	height: 92px;
+	padding: 20px 98px 20px 20px;
+	border-radius: 4px 0px 0px 0px;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+	border: none;
+}
+.fileUploader:hover {
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.fileInput {
+	display: none;
+}
+
+.fileLink {
+	display: block;
+	margin-bottom: 20px;
+}
+.purple {
+	color: #6e41e2;
+}
+.grey {
+	color: gray;
+}
+.fileInfo {
+	/* background-color: #f0f0f0; */
+	padding: 20px;
+	border-radius: 4px;
+	margin-bottom: 10px;
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+}
+
+.deleteButton {
+	background-color: #ff4d4d;
+	color: white;
+	border: none;
+	border-radius: 4px;
+	padding: 5px 10px;
+	cursor: pointer;
+}
+
+.uploadButton {
+	background-color: #4caf50;
+	color: white;
+	border: none;
+	border-radius: 4px;
+	padding: 10px 20px;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+.uploadButton:disabled {
+	background-color: #ccc;
+	cursor: not-allowed;
+}
+
+.error {
+	color: red;
+	margin-bottom: 10px;
+}
+
+.fileUploaderSelected {
+	/* background-color: #6e41e2; Любой цвет, который вы хотите применить при выборе файла */
+}
