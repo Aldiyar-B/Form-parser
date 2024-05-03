@@ -1,0 +1,62 @@
+.input {
+	width: 482px;
+	height: 56px;
+	border-radius: 4px;
+	border: none;
+	outline: none;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+	position: relative;
+	padding-top: 10px; /* Adjust this value as needed */
+	padding-left: 10px;
+	font-size: 16px;
+}
+
+.inputWrapper {
+	position: relative;
+	display: inline-block;
+}
+.inputSpan {
+	position: absolute;
+
+	display: flex;
+	color: gray;
+	font-size: 13px;
+	margin-left: 10px;
+	margin-top: 5px;
+	z-index: 2;
+	align-items: center;
+	pointer-events: none;
+	/*Свойство pointer-events определ  яет, как HTML-элемент реагирует на различные события мыши, прикосновений или события из JavaScript. */
+}
+
+.input:hover {
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.default {
+	background-color: white;
+	color: black;
+}
+
+.default:hover {
+	border-color: #888;
+}
+
+.default:focus {
+	border-color: #6e41e2;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.default:disabled {
+	background-color: #f0f0f0;
+	color: #ccc;
+	cursor: not-allowed;
+}
+.input:active {
+}
+
+.error {
+	background-color: #f9e3e3;
+}
+.errorText {
+	color: red;
+}
