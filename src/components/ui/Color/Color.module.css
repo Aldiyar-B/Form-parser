@@ -1,0 +1,42 @@
+.container {
+	position: relative;
+	width: 60px;
+	height: 30px;
+	box-shadow: rgba(100, 100, 111, 0.8) 0px 7px 29px 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #fff;
+}
+
+.selectedColor {
+	width: 50px;
+	height: 25px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	/* padding: 5px; */
+	position: relative;
+}
+.arrow {
+	background-color: white;
+	padding: 0px 5px 3px 5px;
+	border: none;
+	outline: none;
+}
+.dropdown {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background: white;
+	border: 1px solid #ccc;
+	display: flex;
+	z-index: 10;
+}
+
+.colorSquare {
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+}

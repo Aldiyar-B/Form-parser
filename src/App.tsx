@@ -5,7 +5,8 @@ import Checkbox from './components/ui/Checkbox/Checkbox';
 import FileUploader from './components/ui/Files/Files';
 import Input from './components/ui/Input/Input';
 import Select from './components/ui/Select/Select';
-
+// import ColorField from './components/ui/Color/Color';
+import Color from './components/ui/Color/Color';
 function App() {
   const [isChecked, setIsChecked] = useState(false);
   const [inputValue, setInputValue] = useState('');
@@ -21,6 +22,10 @@ function App() {
 
   const handleTypeChange = (value: string | string[]) => {
     setSelectedType(Array.isArray(value) ? value.join(', ') : value);
+  };
+  const handleColorChange = (color: string) => {
+    console.log('Выбран цвет:', color);
+    // Здесь можно сохранить выбранный цвет в состоянии компонента или отправить на сервер и т.д.
   };
 
   const options = [
@@ -51,6 +56,8 @@ function App() {
       // required={true}
       // multiple={false}
       />
+      <Color />
+
     </div>
   );
 }
