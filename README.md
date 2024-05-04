@@ -1,3 +1,6 @@
+Используется простая архитектура
+"name": "my-dynamic-form-app",
+"version": "0.1.0",
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
