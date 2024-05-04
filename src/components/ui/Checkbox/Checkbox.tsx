@@ -8,6 +8,8 @@ interface CheckboxProps {
 	onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
 	disabled?: boolean;
 	error?: boolean;
+	required?: boolean;
+
 }
 
 const Checkbox: React.FC<CheckboxProps> = ({
@@ -16,6 +18,8 @@ const Checkbox: React.FC<CheckboxProps> = ({
 	onChange,
 	disabled = false,
 	error = false,
+	required = false,
+
 }) => {
 	return (
 		<label className={styles.container}>
@@ -26,6 +30,7 @@ const Checkbox: React.FC<CheckboxProps> = ({
 				onChange={onChange}
 				disabled={disabled}
 				className={`${styles.checkbox} ${error ? styles.error : ""}`}
+				required={required}
 			/>
 			<span className={styles.checkmark}></span>
 		</label>
